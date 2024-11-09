@@ -7,4 +7,5 @@ jobs:
     steps:
       - run: echo "Iniciando a pipeline de teste"
       - run: python --version
+      - run: ls
       - run: python Teste_componente/componente.py
