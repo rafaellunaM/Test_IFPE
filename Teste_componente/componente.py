@@ -1,25 +1,22 @@
 import unittest
-import sqlite3
+
+def soma(a, b):
+    return a + b
+
+def sub(a, b):
+    return a -b 
 
 class Test(unittest.TestCase):
-
-    def setUp(self):
-
-        self.conn = sqlite3.connect(':memory:')
-        self.cursor = self.conn.cursor()
-        self.cursor.execute("CREATE TABLE usuarios (id INTEGER PRIMARY KEY, nome TEXT)")
-
-    def test_inserir_usuario(self):
-
-        self.cursor.execute("INSERT INTO usuarios (nome) VALUES ('João')")
-        self.conn.commit()
-
-        self.cursor.execute("SELECT nome FROM usuarios WHERE id = 1")
-        usuario = self.cursor.fetchone()
-        self.assertEqual(usuario[0], 'João')
-
-    def tearDown(self):
-        return super().tearDown()
     
+    def test_soma(self):
+        self.assertEqual(soma(2, 3), 5)
+        self.assertEqual(soma(-1, 1), 0)
+        self.assertEqual(soma(0, 0), 0)
+
+    def test_subtrai(self):
+        self.assertEqual(sub(5, 3), 2)
+        self.assertEqual(sub(0, 1), -1)
+        self.assertEqual(sub(2, 2), 0)
+
 if __name__ == '__main__':
     unittest.main()
