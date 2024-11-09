@@ -13,6 +13,7 @@ jobs:
       - name: Verificar versão do Python
         run: python --version
 
+    steps:
       - name: Executar teste do componente
         run: python Teste_componente/componente.py
 
