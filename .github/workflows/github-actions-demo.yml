@@ -1,0 +1,10 @@
+name: Teste de Software
+run-name: ${{ github.actor }} está executando a pipeline de teste
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Iniciando a pipeline de teste"
+      - run: python --version
+      - run: python Teste_componente/componente.py
