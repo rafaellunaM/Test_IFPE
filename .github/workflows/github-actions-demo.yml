@@ -7,5 +7,4 @@ jobs:
     steps:
       - run: echo "Iniciando a pipeline de teste"
       - run: python --version
-      - run: ls ${{ github.workspace }}
-      - run: python Teste_componente/componente.py
+      - run: python ${{ github.workspace }}/Teste_componente/componente.py
