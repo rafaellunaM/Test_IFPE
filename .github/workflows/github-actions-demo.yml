@@ -1,7 +1,7 @@
 name: Teste de Software
 run-name: ${{ github.actor }} está executando a pipeline de teste
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   Testes:
