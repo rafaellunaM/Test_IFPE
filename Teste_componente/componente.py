@@ -10,7 +10,7 @@ class Test(unittest.TestCase):
     
     def test_soma(self):
         self.assertEqual(soma(2, 3), 5)
-        self.assertEqual(soma(-1, 1), 1)
+        self.assertEqual(soma(-1, 1), 0)
         self.assertEqual(soma(0, 0), 0)
 
     def test_subtrai(self):
