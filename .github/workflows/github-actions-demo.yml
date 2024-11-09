@@ -8,3 +8,4 @@ jobs:
       - run: echo "Iniciando a pipeline de teste"
       - run: python --version
       - run: python ./Teste_componente/componente.py
+
