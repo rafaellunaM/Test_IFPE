@@ -11,7 +11,7 @@ class Test(unittest.TestCase):
 
     def test_inserir_usuario(self):
 
-        self.cursor.execute("INSERT INTO usuarios (nome) VALUES ('João')")
+        self.cursor.execute("INSERT INTO usuarios (nome) VALUES ('oi')")
         self.conn.commit()
 
         self.cursor.execute("SELECT nome FROM usuarios WHERE id = 1")
