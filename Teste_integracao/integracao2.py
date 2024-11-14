@@ -16,7 +16,7 @@ class Test(unittest.TestCase):
 
         self.cursor.execute("SELECT nome FROM usuarios WHERE id = 2")
         usuario = self.cursor.fetchone()
-        self.assertEqual(usuario[0], 'Maria')
+        self.assertEqual(usuario[1], 'Maria')
 
     def tearDown(self):
         return super().tearDown()
