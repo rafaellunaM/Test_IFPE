@@ -24,4 +24,3 @@ jobs:
 
       - name: Executar teste do integracao2
         run: python Teste_integracao/integracao2.py
-        
