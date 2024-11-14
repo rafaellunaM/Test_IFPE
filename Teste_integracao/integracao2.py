@@ -14,9 +14,9 @@ class Test(unittest.TestCase):
         self.cursor.execute("INSERT INTO usuarios (nome) VALUES ('Maria')")
         self.conn.commit()
 
-        self.cursor.execute("SELECT nome FROM usuarios WHERE id = 1")
+        self.cursor.execute("SELECT nome FROM usuarios WHERE id = 2")
         usuario = self.cursor.fetchone()
-        self.assertEqual(usuario[0], 'João')
+        self.assertEqual(usuario[0], 'Maria')
 
     def tearDown(self):
         return super().tearDown()
