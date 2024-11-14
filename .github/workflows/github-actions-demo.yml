@@ -14,7 +14,7 @@ jobs:
         run: python --version
 
       - name: Executar teste do componente
-        run: python Teste_componente/componente.py
+        run: python Teste_componente/componente2.py
 
-      - name: Executar teste do componente
-        run: python Teste_integracao/integracao.py
+      - name: Executar teste do integração
+        run: python Teste_integracao/integracao2.py
